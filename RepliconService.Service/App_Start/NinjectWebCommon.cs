@@ -10,11 +10,9 @@ namespace RepliconService.Service.App_Start
 
     using Ninject;
     using Ninject.Web.Common;
-    using ServiceManager.Interface;
-    using ServiceManager;
     using Ninject.Modules;
+    using Infrastructure.DependencyResolution;
     using System.Collections.Generic;
-    using RepliconService.Infrastructure.DependencyResolution;
 
     public static class NinjectWebCommon 
     {
@@ -73,8 +71,6 @@ namespace RepliconService.Service.App_Start
                     new ProductModule()
                 };
             kernel.Load(modules);
-
-            //kernel.Bind<IEmployeeRepository>().To<ProductManager>();
         }        
     }
 }
