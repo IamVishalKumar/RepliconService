@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="RepliconService.Service.Employee" CodeBehind="Employee.svc.cs" Factory="Ninject.Extensions.Wcf.NinjectServiceHostFactory"%>
